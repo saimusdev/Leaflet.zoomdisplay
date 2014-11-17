@@ -25,7 +25,7 @@ L.Control.ZoomDisplay = L.Control.extend({
 
     updateMapZoom: function (zoom) {
         if(typeof(zoom) === "undefined"){zoom = ""}
-        this._container.innerHTML = zoom;
+        this._container.innerHTML = (parseInt(zoom)-1) + "x";
     }
 });
 
